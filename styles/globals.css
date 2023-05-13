@@ -25,12 +25,18 @@ body{
   }
   a{
     font-size: 15px ;
+    margin: 0px 16px;
+    cursor: pointer;
   }
   p{
     font-size: 14px;
   }
 }
-
+li{
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
 .common-btn, .common-btn2, .active-btn, .hero-btn{
   padding: 12px 24px;
   font-weight: 500;
