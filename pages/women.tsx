@@ -1,11 +1,11 @@
-
+/* eslint-disable @next/next/no-img-element */
+import Women from '../components/Home/Exploring/Women'
 
 const women = () => {
   return (
-    <div>
-      <h1>women
-women</h1>
-    </div>
+   <div>
+    <Women/>
+   </div>
   );
 };
 

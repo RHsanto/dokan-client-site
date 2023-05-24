@@ -6,7 +6,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="container mx-auto px-32 h-20  flex justify-between items-center">
+    <div className="container px-32 mx-auto  h-20  flex justify-between items-center">
       <div className="logo">
         <Link href="/">
           <h4 >Dokan</h4>

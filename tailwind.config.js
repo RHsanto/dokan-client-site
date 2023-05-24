@@ -12,12 +12,15 @@ module.exports = {
     extend: {
       colors: {
         primary: '#E3FFE6',
-        secondary: '#F4F2DF',
+        secondary:'#FEFCE8',
+        hover_secondary: '#F4F2DF',
         orange: '#F4E8E8',
         offOrange:'#FEE2E2',
         blue:'#0EA5E9',
-        offBlue: '#DFE5ED',
+        offBlue:'#EFF6FF',
+        hover_offBlue: '#DFE5ED',
         green: '#66D78F',
+        offGreen:'#E7F3EA',
         dark: '#0F172A',
         white: '#FFFFFF',
         offWhite:'#F7F7F9',
