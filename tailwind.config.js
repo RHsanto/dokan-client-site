@@ -27,6 +27,7 @@ module.exports = {
         red:'#EF4444',
         yellow:'#FBBF24',
         violet: '#F3E8FF',
+        bgWhite: '#F8FAFC'
       },
     },
   },

@@ -142,8 +142,8 @@ const Discover = () => {
     //     </div> */}
 
     // </div>
-    <div className="p-5 lg:pl-52 -mr-[200px] py-20 w-full overflow-hidden">
-      <h3  className="lg:pb-10 pb-20 lg:pt-14 ">
+    <div className="container mx-auto mr-[50px] py-20 w-full overflow-hidden">
+      <h3  className="lg:pb-10 pb-20 lg:pt-14 lg:px-0 px-5">
         Discover more. <span className="opacity-50">Good things are waiting for you</span>{" "}
       </h3>
       <Slider {...settings}>
