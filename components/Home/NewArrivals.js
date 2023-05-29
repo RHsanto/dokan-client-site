@@ -4,6 +4,7 @@ import img from "../../images/products/1.png";
 import img2 from "../../images/products/2.png";
 import img3 from "../../images/products/3.png";
 import img4 from "../../images/products/4.png";
+import img5 from "../../images/products/5.png";
 import Image from "next/image";
 import { AiFillHeart, AiOutlineHeart, AiFillStar } from "react-icons/ai";
 
@@ -34,7 +35,6 @@ const NewArrivals = () => {
     setCatColor("black");
   };
 
-
   return (
     <div className="container mx-auto lg:px-32">
       <h3 className="lg:pb-10 pb-20 lg:pt-14 ">
@@ -42,8 +42,12 @@ const NewArrivals = () => {
       </h3>
       <div className="grid lg:grid-cols-4 gap-10 p-5 lg:p-0">
         <div>
-          <div className="bg-bgWhite rounded-2xl relative">
-            <Image src={img} alt="img" />
+          <div className="bg-bgWhite rounded-2xl relative lg:h-[300px]">
+            {catColor === "yellow" && <Image src={img} alt="img" />}
+            {catColor === "blue" && <Image src={img2} alt="img" />}
+            {catColor === "red" && <Image src={img3} alt="img" />}
+            {catColor === "green" && <Image src={img4} alt="img" />}
+            {catColor === "black" && <Image src={img5} alt="img" />}
 
             {love === 1 ? (
               <div
