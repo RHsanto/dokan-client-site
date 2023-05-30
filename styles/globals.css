@@ -96,3 +96,7 @@ li{
     top: 100px;
   }
 }
+
+.imgsec:hover .select_size{
+  display: block;
+}

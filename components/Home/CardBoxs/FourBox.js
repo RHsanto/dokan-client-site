@@ -1,16 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
-import img from "../../images/products/1.png";
-import img2 from "../../images/products/2.png";
-import img3 from "../../images/products/3.png";
-import img4 from "../../images/products/4.png";
-import img5 from "../../images/products/5.png";
+import img from "../../../images/products/1.png";
+import img2 from "../../../images/products/2.png";
+import img3 from "../../../images/products/3.png";
+import img4 from "../../../images/products/4.png";
+import img5 from "../../../images/products/5.png";
 import Image from "next/image";
 import { AiFillHeart, AiOutlineHeart, AiFillStar } from "react-icons/ai";
 
-const CardBox = () => {
+const FourBox = () => {
   const [love, setLove] = useState(1);
-  const [catColor, setCatColor] = useState("yellow");
+  const [catColor, setCatColor] = useState("green");
   const handleLove = () => {
     setLove(1);
   };
@@ -63,37 +63,7 @@ const CardBox = () => {
           </div>
           <div className="product_info  p-3 relative">
             <div className="color_category gap-2 flex py-3">
-              <div
-                className={`${catColor === "yellow" && "border-2 border-yellow"}
-                 rounded-full  p-[1px] w-[26px] h-[26px]`}
-              >
-                <button
-                  onClick={yellowBtn}
-                  className="w-[20px] h-[20px] bg-yellow rounded-full "
-                ></button>
-              </div>
-              <div
-                className={`
-                ${catColor === "blue" && "border-2 border-blue"}          
-                rounded-full  p-[1px] w-[26px] h-[26px]`}
-              >
-                <button
-                  onClick={blueBtn}
-                  className="w-[20px] h-[20px] bg-blue rounded-full "
-                ></button>
-              </div>
-
-              <div
-                className={`
-                ${catColor === "red" && "border-2 border-red"}            
-                  rounded-full  p-[1px] w-[26px] h-[26px]`}
-              >
-                <button
-                  onClick={redBtn}
-                  className="w-[20px] h-[20px] bg-red rounded-full "
-                ></button>
-              </div>
-              <div
+            <div
                 className={`${
                   catColor === "green" && "border-2 border-green"
                 } rounded-full  p-[1px] w-[26px] h-[26px]`}
@@ -103,6 +73,37 @@ const CardBox = () => {
                   className="w-[20px] h-[20px] bg-green rounded-full "
                 ></button>
               </div>
+            <div
+                className={`
+                ${catColor === "red" && "border-2 border-red"}            
+                  rounded-full  p-[1px] w-[26px] h-[26px]`}
+              >
+                <button
+                  onClick={redBtn}
+                  className="w-[20px] h-[20px] bg-red rounded-full "
+                ></button>
+              </div>
+            <div
+                className={`
+                ${catColor === "blue" && "border-2 border-blue"}          
+                rounded-full  p-[1px] w-[26px] h-[26px]`}
+              >
+                <button
+                  onClick={blueBtn}
+                  className="w-[20px] h-[20px] bg-blue rounded-full "
+                ></button>
+              </div>
+              <div
+                className={`${catColor === "yellow" && "border-2 border-yellow"}
+                 rounded-full  p-[1px] w-[26px] h-[26px]`}
+              >
+                <button
+                  onClick={yellowBtn}
+                  className="w-[20px] h-[20px] bg-yellow rounded-full "
+                ></button>
+              </div>
+             
+            
               <div
                 className={` ${catColor === "black" && "border-2 border-black"}
                   rounded-full  p-[1px] w-[26px] h-[26px]`}
@@ -131,4 +132,4 @@ const CardBox = () => {
   );
 };
 
-export default CardBox;
+export default FourBox;
