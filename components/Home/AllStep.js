@@ -6,7 +6,7 @@ import step4 from '../../images/step4.png'
 
 const AllStep = () => {
   return (
-    <div className={`my-32 lg:px-32 container mx-auto`}>
+    <div className={` my-32 lg:px-32 container mx-auto`}>
       <div className="lg:grid grid-cols-4 gap-10 items-center ">
        <div>
         <div className='w-[140px] h-[140px]  mx-auto mb-3'>

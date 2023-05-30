@@ -39,10 +39,9 @@ li{
   cursor: pointer;
 }
 
-.common-btn, .common-btn2, .active-btn, .hero-btn{
+.common-btn, .common-btn2, .active-btn, .hero-btn, .hero-btn2{
   padding: 12px 24px;
   font-weight: 500;
-  font-size: .875rem;
   line-height: 1.25rem;
   border-radius: 9999px;
   text-align: center;
@@ -58,7 +57,12 @@ li{
   background-color: black;
   color: white;
 }
-.hero-btn{
+.hero-btn2{
+  color: black;
+  background-color: white;
+}
+
+.hero-btn, .hero-btn2{
   padding: 20px 36px;
 }
 
