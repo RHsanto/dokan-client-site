@@ -10,8 +10,8 @@ const Money = () => {
           <span>With Dokan you will get freeship & savings combo...</span>
 
           <div className="mt-12 flex gap-10">
-            <button className="hero-btn hover:bg-white hover:text-black">Saving Combo</button>
-            <button className="hero-btn2 hover:bg-black hover:text-white shadow-lg">
+            <button className="lg:hero-btn active-btn hover:bg-white hover:text-black">Saving Combo</button>
+            <button className="lg:hero-btn2 common-btn hover:bg-black hover:text-white shadow-lg">
               Discover more
             </button>
           </div>

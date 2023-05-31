@@ -3,6 +3,7 @@ import Discover from '../../components/Home/Discover'
 import NewArrivals from '../../components/Home/NewArrivals'
 import Allstep from '../../components/Home/AllStep'
 import Money from '../../components/Home/Money/Money'
+import Explore from '../../components/Home/Exploring/Explore'
 const HomePage = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const HomePage = () => {
      <NewArrivals/>
      <Allstep/>
      <Money/>
+     <Explore/>
     </div>
   );
 };

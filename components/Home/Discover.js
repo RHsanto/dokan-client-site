@@ -42,118 +42,18 @@ const Discover = () => {
     { id: "04", image:'https://i.ibb.co/6g0sSTj/2.png', bg: "#E3FFE6" },
   ];
   return (
-    // <div className=" mx-auto py-32">
-    //   <h3 className="pb-10">
-    //     Discover more. <span className="opacity-50">Good things are waiting for you</span>{" "}
-    //   </h3>
-
-    //   <div className="lg:flex gap-10 p-5 lg:p-0">
-    //   <Slider {...settings}>
-    //   <div className="lg:w-[544px] lg:h-[306px] w-full flex p-10 rounded-lg bg-blue"
-    //     >
-    //       <div className="relative">
-    //         <p>Explore new arrivals</p>
-    //         <h4 className="pt-2">Shop the latest from top brands</h4>
-    //         <button className="common-btn absolute bottom-0">Show me all</button>
-    //       </div>
-    //       <div>
-    //         <Image src={img1} alt="img" />
-    //       </div>
-    //     </div>
-    //     <div className="lg:w-[544px] lg:h-[306px] w-full flex p-10 rounded-lg bg-blue"
-    //     >
-    //       <div className="relative">
-    //         <p>Explore new arrivals</p>
-    //         <h4 className="pt-2">Shop the latest from top brands</h4>
-    //         <button className="common-btn absolute bottom-0">Show me all</button>
-    //       </div>
-    //       <div>
-    //         <Image src={img1} alt="img" />
-    //       </div>
-    //     </div>
-    //     <div className="lg:w-[544px] lg:h-[306px] w-full flex p-10 rounded-lg bg-blue"
-    //     >
-    //       <div className="relative">
-    //         <p>Explore new arrivals</p>
-    //         <h4 className="pt-2">Shop the latest from top brands</h4>
-    //         <button className="common-btn absolute bottom-0">Show me all</button>
-    //       </div>
-    //       <div>
-    //         <Image src={img1} alt="img" />
-    //       </div>
-    //     </div>
-    //     <div className="lg:w-[544px] lg:h-[306px] w-full flex p-10 rounded-lg bg-blue"
-    //     >
-    //       <div className="relative">
-    //         <p>Explore new arrivals</p>
-    //         <h4 className="pt-2">Shop the latest from top brands</h4>
-    //         <button className="common-btn absolute bottom-0">Show me all</button>
-    //       </div>
-    //       <div>
-    //         <Image src={img1} alt="img" />
-    //       </div>
-    //     </div>
-
-    //     </Slider>
-    //       </div>
-    //     {/* <div className=" lg:w-[544px] lg:h-[306px] w-full flex p-10 rounded-lg bg-blue"
-    //     >
-    //       <div className="relative">
-    //         <p>Explore new arrivals</p>
-    //         <h4 className="pt-2">Shop the latest from top brands</h4>
-    //         <button className="common-btn absolute bottom-0">Show me all</button>
-    //       </div>
-    //       <div>
-    //         <Image src={img1} alt="img" />
-    //       </div>
-    //     </div>
-    //     <div className="lg:w-[544px] lg:h-[306px] w-full flex p-10 rounded-lg bg-blue"
-    //     >
-    //       <div className="relative">
-    //         <p>Explore new arrivals</p>
-    //         <h4 className="pt-2">Shop the latest from top brands</h4>
-    //         <button className="common-btn absolute bottom-0">Show me all</button>
-    //       </div>
-    //       <div>
-    //         <Image src={img1} alt="img" />
-    //       </div>
-    //     </div>
-    //     <div className=" lg:w-[544px] lg:h-[306px] w-full flex p-10 rounded-lg bg-blue"
-    //     >
-    //       <div className="relative">
-    //         <p>Explore new arrivals</p>
-    //         <h4 className="pt-2">Shop the latest from top brands</h4>
-    //         <button className="common-btn absolute bottom-0">Show me all</button>
-    //       </div>
-    //       <div>
-    //         <Image src={img1} alt="img" />
-    //       </div>
-    //     </div>
-    //     <div className="lg:w-[544px] lg:h-[306px] w-full flex p-10 rounded-lg bg-blue"
-    //     >
-    //       <div className="relative">
-    //         <p>Explore new arrivals</p>
-    //         <h4 className="pt-2">Shop the latest from top brands</h4>
-    //         <button className="common-btn absolute bottom-0">Show me all</button>
-    //       </div>
-    //       <div>
-    //         <Image src={img1} alt="img" />
-    //       </div>
-    //     </div> */}
-
-    // </div>
-    <div className="container mx-auto mr-[50px] py-20 w-full overflow-hidden">
+    <div className= "container mx-auto mr-[50px] py-20 w-full overflow-hidden">
       <h3  className="lg:pb-10 pb-20 lg:pt-14 lg:px-0 px-5">
         Discover more. <span className="opacity-50">Good things are waiting for you</span>{" "}
       </h3>
       <Slider {...settings}>
         {discoData?.map(data => (
           <div key={data.id} className="">
-            <div style={{ background: data.bg }} className={` mx-3 flex p-10  rounded-2xl  `}>
+            <div style={{ background: data.bg }} className={`cursor-pointer mx-3 flex p-10  rounded-2xl  `}>
               <div className="relative">
                 <p>Explore new arrivals</p>
                 <h4 className="pt-2">Shop the latest from top brands</h4>
-                <button className="common-btn absolute bottom-0">Show me all</button>
+                <button className="common-btn absolute bottom-0 hover:bg-offWhite hover:shadow-lg">Show me all</button>
               </div>
               <div>
                 <img src={data?.image} alt="img" />
