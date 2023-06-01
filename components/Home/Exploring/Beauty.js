@@ -4,17 +4,61 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Beauty = () => {
-  const [products, setProducts] = useState([]);
+  const product =
+  [
+    { "id":"01",
+      "name": "Backpack",
+      "product": "214",
+      "bgColor":"#DFE5ED",
+      "proImg":"https://i.ibb.co/sFhcp2C/1.png",
+      "bgImg":"https://i.ibb.co/k4FDKvz/1.png"
+  
+    },
+    { "id":"12",
+    "name": "Car Coat",
+    "product": "214",
+    "bgColor":"#DFE5ED",
+    "proImg":"https://i.ibb.co/dDG7CYk/6.png",
+    "bgImg":"https://i.ibb.co/SPn0F0q/5.png"
 
-  useEffect(() => {
-    fetch("/product.json")
-      .then(res => res.json())
-      .then(data => setProducts(data?.slice(5, 11)));
-  }, []);
+  },
+    { "id":"03",
+      "name": "Cycling Shorts",
+      "product": "214",
+      "bgColor":"#E3FFE6",
+      "proImg":"https://i.ibb.co/wS2zWbg/4.png",
+      "bgImg":"https://i.ibb.co/Yt92Cfm/6.png"
+  
+    },
+    { "id":"04",
+      "name": "Cycling Jersey",
+      "product": "214",
+      "bgColor":"#FEF9C3",
+      "proImg":"https://i.ibb.co/VmCj2QV/5.png",
+      "bgImg":"https://i.ibb.co/ZW4Yd6G/3.png"
+  
+    },
+    { "id":"05",
+      "name": "Recycled Blanket",
+      "product": "214",
+      "bgColor":"#F3E8FF",
+      "proImg":"https://i.ibb.co/TYPxJwQ/3.png",
+      "bgImg":"https://i.ibb.co/F0dwcF9/4.png"
+  
+    },
+    { "id":"06",
+      "name": "Car Coat",
+      "product": "214",
+      "bgColor":"#DFE5ED",
+      "proImg":"https://i.ibb.co/dDG7CYk/6.png",
+      "bgImg":"https://i.ibb.co/SPn0F0q/5.png"
+  
+    }
+  ]
 
   return (
     <div className="lg:grid grid-cols-3 lg:px-32 p-10  gap-10">
-      {products?.map(data => (
+      {product?.map(data => (
         <div
           key={data?.id}
           className="relative rounded-3xl shadow-lg

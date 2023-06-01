@@ -4,17 +4,65 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Kids = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    fetch("/product.json")
-      .then(res => res.json())
-      .then(data => setProducts(data?.slice(1, 7)));
-  }, []);
+  const product =
+  [
+    
+    { "id":"02",
+      "name": "Shoes",
+      "product": "316",
+      "bgColor":"#FEE2E2",
+      "proImg":"https://i.ibb.co/RH3BB6W/2.png",
+      "bgImg":"https://i.ibb.co/wz82VQP/2.png"
+  
+    },
+    { "id":"04",
+      "name": "Cycling Jersey",
+      "product": "214",
+      "bgColor":"#FEF9C3",
+      "proImg":"https://i.ibb.co/VmCj2QV/5.png",
+      "bgImg":"https://i.ibb.co/ZW4Yd6G/3.png"
+  
+    },
+    { "id":"06",
+      "name": "Car Coat",
+      "product": "214",
+      "bgColor":"#DFE5ED",
+      "proImg":"https://i.ibb.co/dDG7CYk/6.png",
+      "bgImg":"https://i.ibb.co/SPn0F0q/5.png"
+  
+    },
+    
+    { "id":"08",
+      "name": "Shoes",
+      "product": "316",
+      "bgColor":"#FEE2E2",
+      "proImg":"https://i.ibb.co/RH3BB6W/2.png",
+      "bgImg":"https://i.ibb.co/wz82VQP/2.png"
+  
+    },
+   
+    { "id":"10",
+      "name": "Cycling Jersey",
+      "product": "214",
+      "bgColor":"#FEF9C3",
+      "proImg":"https://i.ibb.co/VmCj2QV/5.png",
+      "bgImg":"https://i.ibb.co/ZW4Yd6G/3.png"
+  
+    },
+    
+    { "id":"12",
+      "name": "Car Coat",
+      "product": "214",
+      "bgColor":"#DFE5ED",
+      "proImg":"https://i.ibb.co/dDG7CYk/6.png",
+      "bgImg":"https://i.ibb.co/SPn0F0q/5.png"
+  
+    }
+  ]
 
   return (
     <div className="lg:grid grid-cols-3 lg:px-32 p-10  gap-10">
-      {products?.map(data => (
+      {product?.map(data => (
         <div
           key={data?.id}
           className="relative rounded-3xl shadow-lg
