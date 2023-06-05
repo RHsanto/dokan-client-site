@@ -5,6 +5,7 @@ import Allstep from '../../components/Home/AllStep'
 import Money from '../../components/Home/Money/Money'
 import Explore from '../../components/Home/Exploring/Explore'
 import SpecialOffer from '../../components/Home/SpecialOffer'
+import OurExperts from '../../components/Home/Experts/OurExperts'
 const HomePage = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const HomePage = () => {
      <Money/>
      <Explore/>
      <SpecialOffer/>
+     <OurExperts/>
     </div>
   );
 };
