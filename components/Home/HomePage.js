@@ -7,6 +7,7 @@ import Explore from '../../components/Home/Exploring/Explore'
 import SpecialOffer from '../../components/Home/SpecialOffer'
 import OurExperts from '../../components/Home/Experts/OurExperts'
 import Departments from '../../components/Home/Department'
+import Testimonial from '../../components/Home/Testimonial'
 const HomePage = () => {
   return (
     <div>
@@ -19,6 +20,7 @@ const HomePage = () => {
      <SpecialOffer/>
      <OurExperts/>
      <Departments/>
+     {/* <Testimonial/> */}
     </div>
   );
 };

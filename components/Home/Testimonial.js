@@ -1,10 +1,19 @@
-import React from 'react';
+/* eslint-disable react/no-unescaped-entities */
+import Image from 'next/image';
+import img1 from '../../images/slider/1.png';
+import img2 from '../../images/slider/2.png';
+import img3 from '../../images/slider/3.png';
 
 const Testimonial = () => {
   return (
-    <div>
-      <h2>Testimonial
-Testimonial</h2>
+    <div className='container mx-auto p-32 text-center'>
+    <h3 className='mb-3'>Good news from far away 🥇</h3>
+    <h6 className='text-xl'>Let's see what people think of Dokan</h6>
+    <div className='flex justify-between items-center px-32 py-10'>
+      <Image src={img2} alt=''/>
+      <Image src={img1} alt=''/>
+      <Image src={img3} alt=''/>
+    </div>
     </div>
   );
 };
