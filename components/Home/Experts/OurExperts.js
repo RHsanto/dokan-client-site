@@ -16,8 +16,8 @@ import { AiFillStar } from "react-icons/ai";
 const OurExperts = () => {
   
   return (
-    <div className="container mx-auto lg:px-32   my-20">
-      <h3 className="my-10">Chosen by our experts</h3>
+    <div className="container mx-auto lg:p-32   my-20">
+      <h3 className="mb-14">Chosen by our experts</h3>
       <div className="lg:grid grid-cols-3 gap-10 lg:p-0 p-5 cursor-pointer">
         <div>
           <div className="rounded-2xl bg-[#F3F4F6]">

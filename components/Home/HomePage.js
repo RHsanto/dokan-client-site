@@ -6,6 +6,7 @@ import Money from '../../components/Home/Money/Money'
 import Explore from '../../components/Home/Exploring/Explore'
 import SpecialOffer from '../../components/Home/SpecialOffer'
 import OurExperts from '../../components/Home/Experts/OurExperts'
+import Departments from '../../components/Home/Department'
 const HomePage = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const HomePage = () => {
      <Explore/>
      <SpecialOffer/>
      <OurExperts/>
+     <Departments/>
     </div>
   );
 };
